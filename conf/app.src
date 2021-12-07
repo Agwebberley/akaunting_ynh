@@ -1,7 +1,7 @@
-SOURCE_URL=url of app's source
+SOURCE_URL=https://github.com/akaunting/akaunting/releases/download/2.1.28/Akaunting_2.1.28-Stable.zip
 SOURCE_SUM=sha256 checksum
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
-SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=
+SOURCE_FORMAT=zip
+SOURCE_IN_SUBDIR=false
+SOURCE_FILENAME=Akaunting_2.1.28-Stable.zip
 SOURCE_EXTRACT=true
