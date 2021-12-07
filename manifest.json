@@ -1,16 +1,16 @@
 {
-    "name": "Example app",
-    "id": "example",
+    "name": "Akaunting",
+    "id": "akaunting",
     "packaging_format": 1,
     "description": {
-        "en": "Explain in *a few (10~15) words* the purpose of the app or what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)",
+        "en": "Acounting and invoicing software",
         "fr": "Expliquez en *quelques* (10~15) mots l'utilité de l'app ou ce qu'elle fait (l'objectif est de donner une idée grossière pour des utilisateurs qui naviguent dans un catalogue de 100+ apps)"
     },
     "version": "1.0~ynh1",
-    "url": "https://example.com",
+    "url": "https://akaunting.com",
     "upstream": {
         "license": "free",
-        "website": "https://example.com",
+        "website": "https://akaunting.com",
         "demo": "https://demo.example.com",
         "admindoc": "https://yunohost.org/packaging_apps",
         "userdoc": "https://yunohost.org/apps",
@@ -28,6 +28,7 @@
     "services": [
         "nginx",
         "php7.3-fpm",
+        "npm",
         "mysql"
     ],
     "arguments": {
@@ -35,12 +36,6 @@
             {
                 "name": "domain",
                 "type": "domain"
-            },
-            {
-                "name": "path",
-                "type": "path",
-                "example": "/example",
-                "default": "/example"
             },
             {
                 "name": "admin",
@@ -52,22 +47,8 @@
                 "default": true
             },
             {
-                "name": "language",
-                "type": "string",
-                "ask": {
-                    "en": "Choose the application language",
-                    "fr": "Choisissez la langue de l'application"
-                },
-                "choices": ["fr", "en"],
-                "default": "fr"
-            },
-            {
                 "name": "password",
                 "type": "password",
-                "help": {
-                    "en": "Use the help field to add an information for the admin about this question.",
-                    "fr": "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
-                }
             }
         ]
     }
